@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ModelBazyDanych">
+  <DataContextMoniker Name="/ModelBazyDanychDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9f42cbc7-2dd6-475b-9212-4cff81ccfeb1" absoluteBounds="3.125, 3.25, 2, 2.5401025390625">
+      <DataClassMoniker Name="/ModelBazyDanychDataContext/Zawodnik" />
+      <nestedChildShapes>
+        <elementListCompartment Id="55b3622a-e94b-4f90-8f3e-a30636a74dc8" absoluteBounds="3.14, 3.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6ad3cf47-8356-423a-8a7e-7e5fc0b40b02" absoluteBounds="6.75, 2.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ModelBazyDanychDataContext/HistoriaTemperatury" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e50e5f1c-74f2-43cd-85ac-d6247441d736" absoluteBounds="6.765, 3.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
