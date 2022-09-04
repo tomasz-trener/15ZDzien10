@@ -71,6 +71,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Administratorzy\TylkoAdministratorzy.aspx" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\now-ui-dashboard.css" />
     <Content Include="assets\css\now-ui-dashboard.min.css" />
@@ -105,6 +106,13 @@
     <Content Include="ZawodnicyAPI.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administratorzy\TylkoAdministratorzy.aspx.cs">
+      <DependentUpon>TylkoAdministratorzy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administratorzy\TylkoAdministratorzy.aspx.designer.cs">
+      <DependentUpon>TylkoAdministratorzy.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -232,6 +240,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Glowna.Master" />
+    <Content Include="Administratorzy\Web.config" />
     <None Include="ModelBazyDanych.dbml.layout">
       <DependentUpon>ModelBazyDanych.dbml</DependentUpon>
     </None>

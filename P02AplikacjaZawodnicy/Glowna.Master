@@ -23,6 +23,7 @@
 </head>
 
 <body class="">
+    <form runat="server">
   <div class="wrapper ">
     <div class="sidebar" data-color="orange">
       <!--
@@ -39,36 +40,36 @@
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
           <li>
-            <a href="./dashboard.html">
+            <a href="../rejestracja.aspx">
               <i class="now-ui-icons design_app"></i>
-              <p>Dashboard</p>
+              <p>Rejestracja</p>
             </a>
           </li>
           <li>
-            <a href="./icons.html">
+            <a href="../logowanie.aspx">
               <i class="now-ui-icons education_atom"></i>
-              <p>Icons</p>
+              <p>Logowanie</p>
             </a>
           </li>
           <li>
-            <a href="./map.html">
+            <a href="../Default.aspx">
               <i class="now-ui-icons location_map-big"></i>
-              <p>Maps</p>
+              <p>Zawodnicy</p>
             </a>
           </li>
           <li>
-            <a href="./notifications.html">
+            <a href="../tajne/StronaTajna.aspx">
               <i class="now-ui-icons ui-1_bell-53"></i>
-              <p>Notifications</p>
+              <p>Tajne</p>
             </a>
           </li>
-          <li>
-            <a href="./user.html">
+         <li>
+            <a href="../Administratorzy/TylkoAdministratorzy.aspx">
               <i class="now-ui-icons users_single-02"></i>
-              <p>User Profile</p>
+              <p>Administrator</p>
             </a>
           </li>
-          <li class="active ">
+        <%--   <li class="active ">
             <a href="./tables.html">
               <i class="now-ui-icons design_bullet-list-67"></i>
               <p>Table List</p>
@@ -85,7 +86,7 @@
               <i class="now-ui-icons arrows-1_cloud-download-93"></i>
               <p>Upgrade to PRO</p>
             </a>
-          </li>
+          </li>--%>
         </ul>
       </div>
     </div>
@@ -101,7 +102,17 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Table List</a>
+            <a class="navbar-brand" href="#pablo">
+
+                Jest zalogowany jako: 
+               
+                     <asp:LoginName ID="LoginName1" runat="server" />
+                     <asp:LoginStatus ID="LoginStatus1" runat="server" />
+
+                
+               
+
+            </a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -109,16 +120,16 @@
             <span class="navbar-toggler-bar navbar-kebab"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
-            <form>
-              <div class="input-group no-border">
-                <input type="text" value="" class="form-control" placeholder="Search...">
+           <%-- <form>--%>
+              <div class="input-group no-border" style="width:218px">
+                <input id="txtFiltr" type="text" value="" class="form-control" placeholder="Search...">
                 <div class="input-group-append">
                   <div class="input-group-text">
                     <i class="now-ui-icons ui-1_zoom-bold"></i>
                   </div>
                 </div>
               </div>
-            </form>
+           <%-- </form>--%>
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#pablo">
@@ -156,7 +167,7 @@
       <!-- End Navbar -->
       <div class="panel-header panel-header-sm">
       </div>
-      <div class="content">
+      <div class="content" style="padding-top:40px">
       
           <asp:ContentPlaceHolder ID="podstrona" runat="server"></asp:ContentPlaceHolder>
 
@@ -194,7 +205,9 @@
       </footer>
     </div>
   </div>
-  <!--   Core JS Files   -->
+ </form>
+    
+    <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
@@ -209,6 +222,9 @@
   <script src="../assets/js/now-ui-dashboard.min.js?v=1.3.0" type="text/javascript"></script>
   <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
+
+     <asp:ContentPlaceHolder ID="WlasneSkrypty" runat="server"></asp:ContentPlaceHolder>
+
 </body>
 
 </html>
