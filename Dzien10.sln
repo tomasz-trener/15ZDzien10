@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01AutentykacjaUzytkownikow
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02AplikacjaZawodnicy", "P02AplikacjaZawodnicy\P02AplikacjaZawodnicy.csproj", "{01D2CF45-5664-4BB6-B0BC-51B521D23859}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03TestyAplikacjiZawodnicy", "P03TestyAplikacjiZawodnicy\P03TestyAplikacjiZawodnicy.csproj", "{31F76630-4D03-4EF5-8CE0-6E05E3C3C8D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04AutentykacjaAplikacjiDesktopowej", "P04AutentykacjaAplikacjiDesktopowej\P04AutentykacjaAplikacjiDesktopowej.csproj", "{DAB99DE3-6E1C-4C5A-82E7-872AF501AA5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{01D2CF45-5664-4BB6-B0BC-51B521D23859}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01D2CF45-5664-4BB6-B0BC-51B521D23859}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01D2CF45-5664-4BB6-B0BC-51B521D23859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31F76630-4D03-4EF5-8CE0-6E05E3C3C8D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F76630-4D03-4EF5-8CE0-6E05E3C3C8D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F76630-4D03-4EF5-8CE0-6E05E3C3C8D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F76630-4D03-4EF5-8CE0-6E05E3C3C8D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAB99DE3-6E1C-4C5A-82E7-872AF501AA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB99DE3-6E1C-4C5A-82E7-872AF501AA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB99DE3-6E1C-4C5A-82E7-872AF501AA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB99DE3-6E1C-4C5A-82E7-872AF501AA5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

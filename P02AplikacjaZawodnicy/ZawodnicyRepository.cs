@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace P02AplikacjaZawodnicy
 {
-    internal class ZawodnicyRepository
+    public class ZawodnicyRepository
     {
         public ZawodnikVM[] WczytajZawodnikow(string filtr, string sortowanie)
 
@@ -79,7 +79,7 @@ namespace P02AplikacjaZawodnicy
             db.SubmitChanges();
         }
 
-        internal void DodajZawodnika(ZawodnikVM zawodnik)
+        public void DodajZawodnika(ZawodnikVM zawodnik)
         {
             ModelBazyDanychDataContext db = new ModelBazyDanychDataContext();
 

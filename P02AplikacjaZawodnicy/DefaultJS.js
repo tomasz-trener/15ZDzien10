@@ -42,6 +42,7 @@ function pokazSzczegoly(id) {
             $(".col-md-12").html(msg);
 
             $("#btnZapisz").click(function (e) {
+                debugger;
                 e.preventDefault();
 
                 var imie = $("#txtImie").val();

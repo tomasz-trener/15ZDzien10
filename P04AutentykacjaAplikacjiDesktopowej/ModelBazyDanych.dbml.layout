@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ModelBazyDanych">
+  <DataContextMoniker Name="/ModelBazyDanychDataContext" />
+  <nestedChildShapes>
+    <classShape Id="dd191ac1-0483-46ab-b111-6c2c63d9a3ae" absoluteBounds="1.625, 2.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ModelBazyDanychDataContext/aspnet_Users" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c75a783a-f69f-4ec9-96c5-b870db77b95d" absoluteBounds="1.6400000000000001, 3.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f37499f9-bf76-4bb7-978e-1b006dc783cb" absoluteBounds="5, 2.125, 2, 4.8477197265625">
+      <DataClassMoniker Name="/ModelBazyDanychDataContext/aspnet_Membership" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6bff1193-7cc4-4d66-aba1-e8c27cee1526" absoluteBounds="5.015, 2.585, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.625 : 3.70274983723958); (5 : 3.70274983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelBazyDanychDataContext/aspnet_Users/aspnet_Users_aspnet_Membership" />
+      <nodes>
+        <classShapeMoniker Id="dd191ac1-0483-46ab-b111-6c2c63d9a3ae" />
+        <classShapeMoniker Id="f37499f9-bf76-4bb7-978e-1b006dc783cb" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

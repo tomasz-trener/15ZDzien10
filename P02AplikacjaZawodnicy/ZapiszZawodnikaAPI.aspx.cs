@@ -21,7 +21,13 @@ namespace P02AplikacjaZawodnicy
                 string miasto = Request["miasto"];
                 int waga = Convert.ToInt32(Request["waga"]);
                 int wzrost = Convert.ToInt32(Request["wzrost"]);
-                DateTime dataur = Convert.ToDateTime(Request["dataUr"]);
+
+                //int[] datas = Request["dataUr"].Split('-').Select(x => Convert.ToInt32(x)).ToArray();
+                //  DateTime dataur = Convert.ToDateTime(datas);
+                //DateTime dataur = new DateTime(datas[2], datas[1], datas[0]);
+
+                string datas = Request["dataUr"];
+                DateTime dataur = DateTime.ParseExact(datas, "dd-MM-yyyy", System.Globalization.CultureInfo.InvariantCulture);
 
                 ZawodnicyRepository zr = new ZawodnicyRepository();
 
