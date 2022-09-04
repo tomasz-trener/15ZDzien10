@@ -126,6 +126,13 @@
     <Compile Include="Error.aspx.designer.cs">
       <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Glowna.Master.cs">
+      <DependentUpon>Glowna.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Glowna.Master.designer.cs">
+      <DependentUpon>Glowna.Master</DependentUpon>
+    </Compile>
     <Compile Include="Logowanie.aspx.cs">
       <DependentUpon>Logowanie.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -224,6 +231,7 @@
       <LastGenOutput>ModelBazyDanych.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Glowna.Master" />
     <None Include="ModelBazyDanych.dbml.layout">
       <DependentUpon>ModelBazyDanych.dbml</DependentUpon>
     </None>

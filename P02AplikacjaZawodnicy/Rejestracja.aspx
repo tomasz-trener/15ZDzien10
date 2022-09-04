@@ -1,16 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Rejestracja.aspx.cs" Inherits="P02AplikacjaZawodnicy.Rejestracja" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Glowna.Master" CodeBehind="Rejestracja.aspx.cs" Inherits="P02AplikacjaZawodnicy.Rejestracja" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-       
+<asp:Content ID="Content1" ContentPlaceHolderID="podstrona" runat="server">
 
-        <asp:CreateUserWizard OnCreatedUser="CreateUserWizard1_CreatedUser" OnContinueButtonClick="CreateUserWizard1_ContinueButtonClick" ID="CreateUserWizard1" runat="server">
+    <form runat="server" style="margin-top:40px">
+           <asp:CreateUserWizard OnCreatedUser="CreateUserWizard1_CreatedUser" OnContinueButtonClick="CreateUserWizard1_ContinueButtonClick" ID="CreateUserWizard1" runat="server">
             <WizardSteps>
                 <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
                 </asp:CreateUserWizardStep>
@@ -18,8 +12,13 @@
                 </asp:CompleteWizardStep>
             </WizardSteps>
         </asp:CreateUserWizard>
-
-
     </form>
-</body>
-</html>
+
+  
+
+
+</asp:Content>
+
+
+
+ 

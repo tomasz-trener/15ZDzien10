@@ -11,16 +11,16 @@ namespace P02AplikacjaZawodnicy
 {
 
 
-    public partial class Logowanie
+    public partial class Glowna
     {
 
         /// <summary>
-        /// Login1 control.
+        /// podstrona control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Login Login1;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder podstrona;
     }
 }
